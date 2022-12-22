@@ -1,24 +1,14 @@
 ﻿// Напишите программу, которая принимает на вход число и выдаёт сумму цифр в числе.
 
-Console.WriteLine("Введите число: ");
-int number = int.Parse(Console.ReadLine()!);
-int len = NumberLen(number);
-SumNumbers(number, len);
-int NumberLen(int a)
+Console.Write("Введите число: ");
+int x = int.Parse(Console.ReadLine()!);
+string string_x = Convert.ToString(x);
+
+int summ = 0;
+
+for (int i = 0; i < string_x.Length; i++)
 {
-    int index = 0;
-    while (a>0) 
-    {
-        a /=10;
-        index++;
-    }
-return index;
+   string a = Convert.ToString(string_x[i]);
+   summ = summ + Convert.ToInt32(a);
 }
-Console.WriteLine(sum);
-
-
-
-
-
-
-Console.Write(sum);
+Console.WriteLine(summ);
