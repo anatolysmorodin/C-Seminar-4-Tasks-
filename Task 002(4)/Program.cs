@@ -3,7 +3,18 @@
 Console.WriteLine("Введите число: ");
 int number = int.Parse(Console.ReadLine()!);
 int len = NumberLen(number);
-sum(number, len);
+SumNumbers(number, len);
+int NumberLen(int a)
+{
+    int index = 0;
+    while (a>0) 
+    {
+        a /=10;
+        index++;
+    }
+return index;
+}
+Console.WriteLine(sum);
 
 
 
