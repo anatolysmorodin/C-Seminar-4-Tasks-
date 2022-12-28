@@ -47,3 +47,4 @@ for (int j = 0; j < numbers.GetLength(1); j++)
 }
 Console.WriteLine();
 PrintArray(numbers);
+
