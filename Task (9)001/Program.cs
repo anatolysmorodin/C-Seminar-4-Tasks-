@@ -5,11 +5,11 @@ Console.Clear();
 Console.Write("Введите число N: ");
 int n = int.Parse(Console.ReadLine());
 
-Console.WriteLine(PrintNumbers(1, n));
+Console.WriteLine(PrintNumbers(n));
 
-string PrintNumbers(int start, int end) 
+string PrintNumbers(int numbers) 
 {
-    if (start == end) return end.ToString();
-    string answer = start + " " + PrintNumbers(start + 1, end);
+    if (numbers == 1) return "1";
+    string answer = numbers + " " + PrintNumbers(numbers - 1);
     return answer; 
 }
